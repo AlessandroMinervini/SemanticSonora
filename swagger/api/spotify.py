@@ -25,7 +25,6 @@ def sp_search(client, query, type, p_limit = 3):
             results = item["album"]["images"]
 
         logger.info("Spotify search end.")
-        print(results)
         return results[0:p_limit] if type == "playlist" else results
 
     except Error as e:

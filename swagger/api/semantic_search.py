@@ -65,7 +65,8 @@ def search(req: QueryPayload) -> Response:
     {
         "query": "your query",
         "collection_name": "my_collection",
-        "limit": 15
+        "limit": 15,
+        "type": "playlist"
     }
 
     :param req:QueryPayload - Parameters for the endpoint. Collection_name: str and query: str are required.
@@ -88,7 +89,7 @@ def search(req: QueryPayload) -> Response:
                        limit=req.limit,
                        query=track["lyrics"])
     
-    tracks = results[1:req.limit+1]["payload"]["track_name"]
+    tracks = [r["payload"]["track_name"] for r in results[1:req.limit+1]]
 
     logger.info(f"Tracks to suggest: {tracks}")
     
