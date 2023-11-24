@@ -1,0 +1,9 @@
+spotipy
+fastapi
+qdrant-client
+sentence-transformers
+python-multipart
+pandas
+loguru
+uvicorn
+python-dotenv
