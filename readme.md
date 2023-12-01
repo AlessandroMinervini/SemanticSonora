@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code for a music recommendation platform that leverages a state-of-the-art machine learning algorithm for semantic search. The platform allows users to search for a specific song and provides detailed information about the song, including its lyrics. Additionally, it offers curated playlists based on the searched song using advanced recommendation algorithms.
+This repository contains the source code for a music recommendation platform that utilizing a state-of-the-art machine learning algorithm for semantic search. The platform allows users to search for a specific song and provides detailed information about the song, including its lyrics. Additionally, it offers curated playlists based on the searched song using advanced recommendation algorithms.
 
 ## Features
 
